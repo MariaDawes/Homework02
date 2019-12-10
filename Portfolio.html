@@ -26,117 +26,144 @@
         body {
             background-color: rgb(236, 232, 232);
         }
+
         h1 {
-            background-color:  rgb(124, 207, 207);
+            background-color: rgb(124, 207, 207);
             color: white;
         }
+
         h2 {
-            color:  rgb(100, 170, 170);
+            color: rgb(100, 170, 170);
         }
 
-        .legends 
-        {
+        .legends {
             position: absolute;
             background-color: #4AAAA5;
             color: white;
             font-weight: bold;
-            width: 57%;
+            width: 100%;
             text-align: center;
-            box-sizing: border-box;
             bottom: 10px;
             padding: 3px;
             opacity: 0.70;
+
+
+        }
+
+        .card {
+            padding: 0px !important;
+            margin: 20px 0px 20px 0px;
+        }
+
+        .card img {
+            width: 100%;
+        }
+        .main-container {
+            margin-bottom:100px;
         }
     </style>
 </head>
+
 <body>
 
     <!-- Row 1 - Navigation Bar -->
     <div class="d-sm-flex flex-column flex-md-row align-items-center p-3 md-4 mb-3 bg-white border-bottom shadow-sm">
-            <h1 class="mr-md-auto font-weigh-bold">Maria Dawes-Tedesco</h1>
-            <nav class="my-2 my-sm-0 mr-sm-3">
-                <a class="p-2 text dark" href='index.html'>About</a>
-                <a class="p-2 text dark" href='Contact.html'>Contact</a>
-                <a class="p-2 text dark" href='Portfolio.html'>Portfolio</a>
-            </nav>
-        </div>
+        <h1 class="mr-md-auto font-weigh-bold">Maria Dawes-Tedesco</h1>
+        <nav class="my-2 my-sm-0 mr-sm-3">
+            <a class="p-2 text dark" href='index.html'>About</a>
+            <a class="p-2 text dark" href='Contact.html'>Contact</a>
+            <a class="p-2 text dark" href='Portfolio.html'>Portfolio</a>
+        </nav>
+    </div>
 
 
     <!-- Container -->
-    <div class="container">
-        
+    <div class="container main-container">
+
         <!-- Design the card format -->
         <div class="row">
             <div class="col-lg-12">
                 <div class="card">
-                    
+
                     <!-- Card Row 1 - About me heading-->
                     <div class="card-body">
                         <h2>Portfolio</h2>
                         <hr>
-                        
+
                         <!-- Card Row 2 of 4 - Picture gallery -->
                         <div class="row">
-                            <div class="col-lg-6">
-                                <a href="#" target="_blank">
-                                    <img class="img img-thumbnail" src="Portfolioweb.jpg">
-                                    <div class="legends">Portfolio</div>
-                                </a>
-                                <br>
+                            <div class="col-lg-4">
+                                <div class="card">
+                                    <a href="#" target="_blank">
+                                        <img src="Portfolioweb.jpg" alt="Portfolio Picture">
+                                        <div class="legends">Portfolio</div>
+                                    </a></div>
                             </div>
-                            <div class="col-lg-6">
-                                <a href="#" target="_blank">
-                                    <img class="img img-thumbnail" src="LinkedIn.jpg">
-                                    <div class="legends">LinkedIn</div>
-                                </a>
-                                <br>
+                            <div class="col-lg-4">
+                                <div class="card">
+                                    <a href="#" target="_blank">
+                                        <img src="LinkedIn.jpg" alt="Linked In Logo">
+                                        <div class="legends">LinkedIn</div>
+                                    </a></div>
+                            </div>
+                            <div class="col-lg-4">
+                                <!--Empty-->
                             </div>
                         </div> <!-- End Card Row 2 of 4 - Picture and text -->
-                        
+
                         <!-- Card Row 3 to 4 - Picture gallery -->
                         <div class="row">
-                            <div class="col-lg-6">
-                                <a href="#" target="_blank">
-                                    <img class="img img-thumbnail" src="Trips.jpg">
-                                    <div class="legends">Travels</div>
-                                </a>
-                                <br>
+                            <div class="col-lg-4">
+                                <div class="card">
+                                    <a href="#" target="_blank">
+                                        <img src="Trips.jpg">
+                                        <div class="legends">Travels</div>
+                                    </a></div>
                             </div>
-                            <div class="col-lg-6">
-                                <a href="#" target="_blank">
-                                    <img class="img img-thumbnail" src="FF.jpg">
-                                    <div class="legends">People</div>
-                                </a>
-                                <br>
+                            <div class="col-lg-4">
+                                <div class="card">
+                                    <a href="#" target="_blank">
+                                        <img src="FF.jpg" alt="Family and friends">
+                                        <div class="legends">People</div>
+                                    </a></div>
+
+                            </div>
+                            <div class="col-lg-4">
+                                <!--Empty -->
                             </div>
                         </div> <!-- End Card Row 3 of 4- Picture and text -->
-                        
+
                         <!-- Card Row 4 to 4 - Picture gallery -->
                         <div class="row">
-                            <div class="col-lg-6">
-                                <a href="#" target="_blank">
-                                    <img class="img img-thumbnail" src="Charity.jpg">
-                                    <div class="legends">Charity</div>
-                                </a>
+                            <div class="col-lg-4">
+                                <div class="card">
+                                    <a href="#" target="_blank">
+                                        <img src="Charity.jpg" alt="Charity">
+                                        <div class="legends">Charity</div>
+                                    </a></div>
                             </div>
-                            <div class="col-lg-6">
-                                <img class="img img-thumbnail" src="">
+                            <div class="col-lg-4">
+                                <!--Empty -->
+                            </div>
+                            <div class="col-lg-4">
+                                <!--Empty -->
                             </div>
                         </div> <!-- End Card Row 4 of 4 - Picture and text -->
 
-                        
+
                     </div> <!-- End Card Row 1 - About me heading-->
                 </div>
             </div>
-       </div> 
-       <!-- End Design the card format -->
-            
-       <!-- Start Footer Navbar  -->
+        </div>
+        <!-- End Design the card format -->
+
+        <!-- Start Footer Navbar  -->
         <nav class="navbar fixed-bottom navbar-dark bg-dark">
             <a class="navbar-brand">.</a>
         </nav>
     </div>
     <!-- End - Container -->
+
     <body>
 
 </html>
